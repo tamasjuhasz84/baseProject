@@ -1,0 +1,29 @@
+extends layout
+
+block content
+  div(id="myDropdown" class="dropdown-content")
+    a(class='button' href="http://localhost:3000") Főoldal
+    a(class='button' href="http://localhost:3000/solid") Solid Elvek
+    a(class='button' href="http://localhost:3000/adatbazis") Adatbázis
+    a(class='button' href="http://localhost:3000/cleancode") Tiszta kód
+  div
+  h1 Solid Elvek
+  h3 Egyetlen felelősség elve - Single Responsibility Principle[3]
+  br
+  p Egy osztály vagy modul csak egyetlen felelősséggel rendelkezzen (azaz: egy oka legyen a változásra). Azaz minden elkülönítve is értelmezhető funkció illetve felelősségi kör kezelése kerüljön külön osztályba vagy modulba.
+  br
+  h3 Nyílt/zárt elv - Open/Closed Principle[4]
+  br
+  p Egy osztály vagy modul legyen nyílt a kiterjesztésre, de zárt a módosításra. Azaz a funkcionalitás bővítéséhez ne legyen szükség az osztály forráskódjának módosítására, ehelyett legyen mód leszármazással vagy kompozíción keresztül kiterjeszteni a meglévő implementációt.
+  br
+  h3 Liskov helyettesítési elv - Liskov substitution principle[5]
+  br
+  p Minden osztály legyen helyettesíthető a leszármazott osztályával anélkül, hogy a program helyes működése megváltozna. Azaz garantáljuk, hogy egy adott (akár absztrakt) típussal átvett objektum teljesíti, amit a típustól elvárunk. Azaz típusörökléskor a leszármazottnak továbbra is megegyező módon támogatnia kell a felmenői által biztosított funkciókat. Árnyalja a képet, hogy a Java-világban elterjedt az opcionálisan implementálható metódusok használata, alapvetően az API egyszerűségének megőrzése érdekében. Ilyenkor az interfész technikailag ugyan tartalmazza az adott metódust, ám az implementációknak nem kötelező támogatniuk.
+  br
+  h3 Interfész elválasztási elv - Interface segregation principle[6]
+  br
+  p Az interfészek szétválasztásának elve: egyetlen kliens se legyen rákényszerítve arra, hogy olyan eljárásoktól függjön, amelyeket nem is használ. Ez a gyakorlatban általában azt jelenti, hogy egy átvett paraméter típusa lehetőleg arra legyen specializálva, amilyen művelet(ek)et ténylegesen elvégzünk rajta. Az ilyen célra kialakított legáltalánosabb interfészek gyakran tartalmazzák az „-able” végződést (pl. Comparable, Iterable stb.).
+  br
+  h3 Függőség megfordítási elv - Dependency inversion principle[7]
+  br
+  p A magas szintű modulok ne függjenek az alacsony szintű moduloktól. Mindkettő absztrakcióktól függjön. Tehát az alacsonyabb szint legyen egy API megvalósítása, a magasabb szint pedig ezen az API-n keresztül használja.

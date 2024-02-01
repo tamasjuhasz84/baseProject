@@ -1,0 +1,62 @@
+extends layout
+
+block content
+  div(id="myDropdown" class="dropdown-content")
+    a(class='button' href="http://localhost:3000") Főoldal
+    a(class='button' href="http://localhost:3000/solid") Solid Elvek
+    a(class='button' href="http://localhost:3000/adatbazis") Adatbázis
+    a(class='button' href="http://localhost:3000/cleancode") Tiszta kód
+  div
+  h1 Tiszta Kód
+  h3 1. Olvashatóság:
+  br
+  p A tiszta kód könnyen olvasható, ami azt jelenti, hogy bárki (beleértve az alkotót is) gyorsan megértheti. Ez csökkenti a kód funkcióinak megértéséhez szükséges időt, ami gyorsabb fejlesztést és hibakeresést eredményez.
+  br
+  h3 2. Karbantarthatóság:
+  br
+  p A kódot gyakrabban olvassuk, mint írjuk. Ha tiszta kódot írsz, könnyebbé válik az alkalmazás karbantartása és fejlesztése. Ez döntő fontosságú a szoftverfejlesztési életciklusban, ahol a projektek gyakran fejlődnek, változnak.
+  br
+  h3 3. Közös munka:
+  br
+  p A tiszta kód ösztönzi a közös munkát. Ha a kód tiszta és jól szervezett, a csapat többi tagja hatékonyan dolgozhat rajta. Ez megkönnyíti a feladatok felosztását és a kódbázis különböző részein történő egyidejű munkát.
+  br
+  h3 4. Hibák mérséklése:
+  br
+  p A tiszta kód csökkenti a hibák valószínűségét. A nehezen érthető kód esetén hajlamosabbak vagyunk a hibákra a módosítások vagy fejlesztések során.
+  br
+  h3 5. Hatékonyság:
+  br
+  p A tiszta kód a hatékony kód. Általában gyorsabban fut és kevesebb erőforrást használ, mert nem csinál szükségtelen műveleteket.
+  br
+  h3 6. Ne ismételd magad:
+  br
+  p Úgy kell a kódot megírni, hogy elkerüld a redundanciát.
+  br
+  h3 7. Ne ismételd magad:
+  br
+  p Úgy kell a kódot megírni, hogy elkerüld a redundanciát.
+  br
+  h3 8. Névkonvenció:
+  br
+  p Adjunk beszédes neveket a változóknak, függvényeknek, osztályoknak és egyéb azonosítóknak. A jól megválasztott név elmagyarázza az adott elem célját, és érthetőbbé teszi a kódot. Kerüljük az egybetűs változóneveket vagy a fura rövidítéseket..
+  br
+  h3 9. Rövidebb funkciók és metódusok:
+  br
+  p A funkcióknak és metódusoknak tömörnek kell lenniük és egyetlen feladatra kell összpontosítaniuk. Az Egységes Felelősség Alapelve kimondja, hogy egy funkciónak egy dolgot kell tennie, és azt jól kell csinálnia. A rövidebb függvények könnyebben megérthetőek, tesztelhetőek és karbantarthatóak. Ha egy funkció túl hosszú, akkor át kell gondolni, hogy hogyan lehet felbontani.
+  br
+  h3 10. Kommentek:
+  br
+  p Használjunk kevesebb kommentet, de amikor használjuk, akkor adja át a szükséges információt. A jó kódnak magától értetődőnek kell lennie, komment nélkül is. Minden másra ott a dokumentáció és a README-fájl, amik segítenek a többi fejlesztőnek megérteni a kód célját és használatát. Ezekben a dokumentációban pedig az általunk írt algoritmusok működését kell elmagyarázni, nem pedig triviális dolgokat vagy más álltal írt nyilvános API-k műkdését.
+  br
+  h3 11. Formázás és linterek:
+  br
+  p Tartsuk be következetesen a kódolási stílust. Ezáltal a kódbázis tisztának és rendezettnek fog tűnni. A legtöbb programozási nyelv egyébként rendelkezik elfogadott kódolási szabványokkal (pl. PEP 8 Pythonhoz, eslint JavaScripthez), amiket kvetni kell. A következetesség vonatkozik a névkonvenciókra, a használt karaktrekre, és magára a kódszerkezetre is.
+  br
+  h3 12. Sortörések:
+  br
+  p Formázzuk a kódot szóközökkel és sortörésekkel, különösen a kód logikai szakaszainak elválasztásánál. Ez javítja az olvashatóságot.
+  br
+  h3 12+1. Egyéb:
+  br
+  p A tiszta kódot a fejlesztés szinte minden szakaszánál alkalmazni kell. Ilyenek például a hibakezelés, tesztelés, refaktorálás vagy akár a verzió kezelés.
+  br

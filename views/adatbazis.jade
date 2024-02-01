@@ -1,0 +1,17 @@
+extends layout
+
+block content
+  div(id="myDropdown" class="dropdown-content")
+    a(class='button' href="http://localhost:3000") Főoldal
+    a(class='button' href="http://localhost:3000/solid") Solid Elvek
+    a(class='button' href="http://localhost:3000/adatbazis") Adatbázis
+    a(class='button' href="http://localhost:3000/cleancode") Tiszta kód
+  div
+  h1 Adatbázis
+  p Itt egy adatbázis teljes adatait kapom vissza: 
+
+  div #{JSON.stringify(fullTable)}
+
+  p Itt meg csak az éveket: 
+
+  div #{JSON.stringify(allAges)}
