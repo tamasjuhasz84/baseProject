@@ -1,12 +1,7 @@
 extends layout
 
 block content
-  div(id="myDropdown" class="dropdown-content")
-    a(class='button' href="http://localhost:3000") Főoldal
-    a(class='button' href="http://localhost:3000/solid") Solid Elvek
-    a(class='button' href="http://localhost:3000/adatbazis") Adatbázis
-    a(class='button' href="http://localhost:3000/cleancode") Tiszta kód
-  div
+  include ./navbar.jade
   h1 Főoldal
   p Eze egy egyszerű express js programm ami Sequelize adatbázist használ, és amiben legalább 3 SOLID elv megjelenik.
   p Ezen kívül leír legalább legalább 12 eset, ami clean code témakörben számít.
